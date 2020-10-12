@@ -28,7 +28,7 @@ Route::get('job', function(){
 
 
 DB::listen(function($qury){
-    echo "<pre> {{$qury->sql}} </pre>";
+   // echo "<pre> {{$qury->sql}} </pre>";
 });
 
 

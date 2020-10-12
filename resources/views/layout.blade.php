@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script>
+        window.Laravel = {
+            csrfToken: "{{ csrf_token() }}"
+        }
+    </script>
     <title>@yield('title','Aprende')</title>
 </head>
 <body>
